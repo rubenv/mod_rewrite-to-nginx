@@ -1,0 +1,8 @@
+[
+    {
+        "type": "warning",
+        "warning": "unsupported_condition",
+        "line": 1,
+        "text": "!!!INVALID!!!"
+    }
+]

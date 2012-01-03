@@ -1,0 +1,8 @@
+[
+    {
+        "type": "rewrite",
+        "match": "^(.*)\\.(ico|jpg|png|gif)$",
+        "target": "files/$1.$2",
+        "conditions": "!-f $request_filename"
+    }
+]

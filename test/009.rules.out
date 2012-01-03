@@ -1,0 +1,3 @@
+if (!-f $request_filename) {
+    rewrite ^(.*)\.(ico|jpg|png|gif)$ files/$1.$2 last;
+}

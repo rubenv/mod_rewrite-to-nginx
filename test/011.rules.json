@@ -1,0 +1,7 @@
+[
+    {
+        "type": "status",
+        "code": 403,
+        "match": "\\.exe"
+    }
+]

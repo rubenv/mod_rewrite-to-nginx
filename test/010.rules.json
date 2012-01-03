@@ -1,0 +1,8 @@
+[
+    {
+        "type": "rewrite",
+        "match": "^$",
+        "target": "/blog/",
+        "last": true
+    }
+]

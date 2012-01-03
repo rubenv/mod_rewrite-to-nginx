@@ -1,0 +1,28 @@
+{
+    "name"            : "mod_rewrite-to-nginx",
+    "version"         : "0.0.1",
+    "description"     : "Convert Apache mod_rewrite to nginx rules.",
+    "keywords"        : ["apache", "nginx", "mod_rewrite"],
+    "url"             : "http://github.com/rubenv/mod_rewrite-to-nginx",
+    "repositories"    : [
+        {
+            "type"    : "git",
+            "url"     : "git://github.com/rubenv/mod_rewrite-to-nginx.git" 
+        } 
+    ],
+    "author"          : "Ruben Vermeersch <ruben@savanne.be>",
+    "contributors"    : [],
+    "licenses"        : [
+        {
+            "type"    : "MIT",
+            "url"     : "https://raw.github.com/rubenv/mod_rewrite-to-nginx/master/LICENSE"
+        }
+    ],
+    "dependencies"    : [],
+    "devDependencies" : {
+        "mocha"       : "~ 0.8.x"
+    },
+    "bin"             : { "mod_rewrite-to-nginx": "./src/main.js" },
+    "main"            : "./lib/index.js"
+}
+

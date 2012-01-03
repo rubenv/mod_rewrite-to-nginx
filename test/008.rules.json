@@ -1,0 +1,8 @@
+[
+    {
+        "type": "warning",
+        "warning": "condition_without_last",
+        "line": 2,
+        "text": "^(.*)\\.(ico|jpg|png|gif)$ files/$1.$2"
+    }
+]

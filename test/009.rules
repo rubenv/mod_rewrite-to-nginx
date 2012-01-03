@@ -1,0 +1,2 @@
+RewriteCond    %{REQUEST_FILENAME}  !-f
+RewriteRule    ^(.*)\.(ico|jpg|png|gif)$ files/$1.$2 [L]

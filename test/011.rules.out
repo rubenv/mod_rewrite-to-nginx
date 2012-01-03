@@ -1,0 +1,3 @@
+if ($request_uri ~* \.exe) {
+    return 403;
+}
