@@ -1,1 +1,14 @@
-[]
+[
+    {
+        "type": "blank",
+        "text": "# This is a comment."
+    },
+    {
+        "type": "blank",
+        "text": "# The line above is empty"
+    },
+    {
+        "type": "blank",
+        "text": "# Indented comment"
+    }
+]
