@@ -1,0 +1,9 @@
+[
+    {
+        "type": "rewrite",
+        "match": "^localpath(.*)",
+        "target": "/otherpath$1",
+        "redirect": true,
+        "code": 302
+    }
+]

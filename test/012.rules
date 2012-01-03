@@ -1,0 +1,1 @@
+RewriteRule ^localpath(.*) /otherpath$1 [R]
