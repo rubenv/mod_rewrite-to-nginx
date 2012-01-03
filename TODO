@@ -1,3 +1,4 @@
 * Support redirects
 * Pass through whitespace and comments
 * Increase coverage and make things work (go for all tests green!)
+* Output warnings on stderr for utility.
