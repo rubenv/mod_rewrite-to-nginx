@@ -1,0 +1,19 @@
+#!/usr/bin/env node
+
+var fs = require('fs');
+var convert = require('../lib/index.js');
+var program = require('commander');
+
+var info = JSON.parse(fs.readFileSync(__dirname + '/../package.json'), 'utf8');
+
+program
+    .version(info.version)
+    .parse(process.argv);
+
+if (process.argv.length != 3) {
+    console.log('Usage: mod_rewrite-to-nginx filename');
+    process.exit();
+}
+
+var input = fs.readFileSync(process.argv[2], 'utf8');
+console.log(convert(input));

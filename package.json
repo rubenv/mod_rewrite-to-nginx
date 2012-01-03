@@ -18,11 +18,13 @@
             "url"     : "https://raw.github.com/rubenv/mod_rewrite-to-nginx/master/LICENSE"
         }
     ],
-    "dependencies"    : [],
+    "dependencies"    : {
+        "commander"   : "~ 0.5.x"
+    },
     "devDependencies" : {
         "mocha"       : "~ 0.8.x"
     },
-    "bin"             : { "mod_rewrite-to-nginx": "./src/main.js" },
+    "bin"             : { "mod_rewrite-to-nginx": "./bin/mod_rewrite-to-nginx" },
     "main"            : "./lib/index.js"
 }
 
