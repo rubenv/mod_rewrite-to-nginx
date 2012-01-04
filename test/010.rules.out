@@ -1,1 +1,1 @@
-rewrite ^$ /blog/ last;
+rewrite ^/$ /blog/ last;

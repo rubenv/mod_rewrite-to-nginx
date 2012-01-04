@@ -1,0 +1,1 @@
+RewriteRule ^users/(.*)$   /show?user=$1
