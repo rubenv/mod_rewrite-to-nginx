@@ -5,6 +5,10 @@
     },
     {
         "type": "blank",
+        "text": ""
+    },
+    {
+        "type": "blank",
         "text": "# The line above is empty"
     },
     {

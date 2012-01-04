@@ -2,6 +2,10 @@ var fs = require('fs');
 var assert = require('assert');
 var convert = require('./../lib/index.js');
 
+var options = {
+    output_warnings: false
+};
+
 var mkSuite = function (file) {
     var input = fs.readFileSync(__dirname + '/' + file, 'utf8');
     var rules = JSON.parse(fs.readFileSync(__dirname + '/' + file + '.json', 'utf8'));
@@ -22,7 +26,7 @@ var mkSuite = function (file) {
 
         test('Rules are converted without error', function () {
             assert.notEqual(parsed, null);
-            converted = convert.transform(parsed);
+            converted = convert.transform(parsed, options);
         });
 
         test('Outputs are equal', function () {
@@ -31,7 +35,7 @@ var mkSuite = function (file) {
         });
 
         test('Convenience wrapper does the same thing', function () {
-            assert.equal(convert(input), out);
+            assert.equal(convert(input, options), out);
         });
     });
 }
