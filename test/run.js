@@ -31,7 +31,7 @@ var mkSuite = function (file) {
 
         test('Outputs are equal', function () {
             assert.notEqual(parsed, null);
-            assert.equal(out, converted); 
+            assert.equal(out, convert.join(converted)); 
         });
 
         test('Convenience wrapper does the same thing', function () {
